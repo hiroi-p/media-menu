@@ -15,7 +15,7 @@ COMPILE_DEP=${DISTRO} install -y libncurses5-dev g++ gcc libncursesw5-dev
 endif
 ifeq (${DISTRO}, dnf)
 DISTRO2= ${DISTRO} install -y fzf libX11-devel libXext-devel jq curl yt-dlp ncurses python python-pip python3-devel mpv git openssl && python3 -m pip install --upgrade pip && python3 -m pip install --upgrade Pillow && pip3 install ueberzug && pip3 install youtube-dl && git clone https://github.com/pystardust/ani-cli.git && cd ani-cli && cp -r ani-cli /bin && cd .. & rm -rf ani-cli
-COMPILE_DEP= ${DISTRO} install ncurses-devel gcc g++
+COMPILE_DEP= ${DISTRO} -y install ncurses-devel gcc g++
 endif
 FLAG = -lncurses
 
