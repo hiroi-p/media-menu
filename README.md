@@ -36,3 +36,4 @@ sudo make && sudo make install
 To add channels in the subscriptions section, create and put the channel urls in the ```~/.configytfzf/subscriptions``` text file.
 # Mentions
 This program uses [ytfzf](https://github.com/pystardust/ytfzf) and [ani-cli](https://github.com/pystardust/ani-cli), don't forget to check them out!
+as
